@@ -1,0 +1,118 @@
+#root {
+  max-width: 1194px;
+  margin: 0 auto;
+}
+
+.top-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+.title-con {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 25.2px;
+} 
+
+.filter-con {
+  display: flex;
+}
+
+.select-wrapper {
+  position: relative;
+}
+
+.select-wrapper select {
+  padding: 8px 16px;
+  border: 1px solid #393C49;
+  border-radius: 8px;
+  background: #1F1D2B;
+  color: #FFFFFF;
+
+  -webkit-appearance: none;
+  appearance: none;
+  padding-right: 37px;
+}
+
+.select-wrapper:not(:last-child) {
+  margin-right: 16px;
+}
+
+.select-wrapper::after {
+  content: url('./assets/arrow-ios-down.png');
+  font-size: 1rem;
+  top: 6px;
+  right: 15px;
+  position: absolute;
+}
+
+.content-con {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(186px, 1fr));
+  grid-column-gap: 12px;
+  grid-row-gap: 20px;
+  justify-items: center;
+  margin-top: 24px;
+}
+
+.pagination {
+  margin-top: 12px;
+  margin-bottom: 20px;
+}
+
+.pagination button {
+  width: 48px;
+  height: 48px;
+  margin: 0 4px;
+  margin-top: 8px;
+  background: #373946;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+}
+
+.pagination button:hover {
+  border: 1px solid #fff;
+}
+
+.pagination button.active {
+  background-color: #EA7C69;
+  border: none;
+  color: white;
+  box-shadow: 0px 8px 24px 0px #EA7C6952;
+}
+
+@media screen and (max-width: 1024px)  {
+    #root {
+      width: 800px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+  #root {
+    width: 568px;
+  }
+}
+
+@media screen and  (max-width: 568px) {
+  #root {
+    width: 468px;
+  }
+}
+
+@media screen and (max-width: 375px) { 
+  #root {
+    width: 336px;
+    margin: 0 auto;
+  }
+
+  .top-content {
+    flex-direction: column;
+    margin-top: 0px;
+  }
+
+  .title-con {
+    margin-bottom: 24px;
+  }
+}

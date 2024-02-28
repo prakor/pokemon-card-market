@@ -1,0 +1,135 @@
+.card {
+    height: 278px;
+    width: 175px;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+}
+
+.card-con {
+    height: 178.42px;
+    width: 100%;
+    border-radius: 16px;
+    background: #1F1D2B;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+}
+
+.card-img {
+    width: 102px;
+    height: 142px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.card-name {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+
+}
+
+.cardmarket {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 127px;
+    position: absolute;
+    bottom: 62px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dots{
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #312e3c;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.card-total {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15.6px;
+    color: #ABBBC2;
+}
+
+.btn-add {
+    background: #373946;
+    border: none;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 21.6px;
+    /* width: 144px; */
+    /* height: 38px; */
+    padding: 8px 0px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 16px;
+}
+
+.btn-add img {
+    width: 14px;
+    height: 14px;
+    margin-right: 8px;
+    vertical-align:middle;
+}
+
+.btn-add:hover {
+    background: #4c505a;
+} 
+
+.btn-add:focus {
+    background: #4c505a;
+}
+
+button.btn-add:disabled,
+button.btn-add[disabled]{
+background: #2e313e;
+color: #666666;
+}
+
+@media screen and (max-width: 375px) {
+    .card {
+        width: 336px;
+        height: 407px;
+    }
+
+    .card-img {
+        width: 194.73px;
+        height: 270.81px;
+        /* top: 15px; */
+        /* top: -5px; */
+    }
+
+    .card-con {
+        height: 217px;
+    }
+
+    .card-name {
+        margin-top: 100px;
+    }
+
+    .card-name, .card-total {
+        font-size: 14px;
+    }
+
+    .btn-add {
+        font-size: 14px;
+        line-height: 25.2px;
+    }
+}
